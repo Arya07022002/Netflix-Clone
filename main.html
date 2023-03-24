@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Netflix</title>
+		<link rel="stylesheet" href="./main.css" />
+		<script
+			src="https://kit.fontawesome.com/8fb4c5b95e.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav-bar">
+				<div class="part">
+					<i class="fa-solid fa-bars"></i>
+					<img src="./aaset/netflix-logo-0.png" alt="" class="logo-nav" />
+				</div>
+
+				<div class="part">
+					<i class="fa-solid fa-magnifying-glass"></i>
+					<i class="fa-solid fa-ellipsis"></i>
+				</div>
+			</nav>
+
+			<div class="hero">
+				<span class="tag">U/A 13+</span>
+				<div class="hero1">
+					<h1>KANTARA</h1>
+					<button class="btn"><i class="fa-solid fa-play"></i>Play</button>
+					<button class="btn"><i class="fa-solid fa-plus"></i>My List</button>
+					<div class="desc">
+						<p>
+							When green paves the way for betrayal, scheming and murder, a
+							young tribal reluctantly dons the traditions of his ancestors to
+							seek justice.
+						</p>
+						<h2>Watch in Tamil,Telugu and Hindi</h2>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="Varieties">
+			<div class="popular">
+				<h2>Popular on Netflix</h2>
+				<div
+					class="splide"
+					id="sec1"
+					role="group"
+					aria-label="Splide Basic HTML Example"
+				>
+					<div class="splide__track">
+						<div class="splide__list">
+							<div class="splide__slide">
+								<img src="./aaset/I1.jpg" alt="" />
+							</div>
+							<div class="splide__slide">
+								<img src="./aaset/I2.jpg" alt="" />
+							</div>
+							<div class="splide__slide">
+								<img src="./aaset/I3.jpg" alt="" />
+							</div>
+							<div class="splide__slide">
+								<img src="./aaset/I4.jpg" alt="" />
+							</div>
+							<div class="splide__slide">
+								<img src="./aaset/I5.jpg" alt="" />
+							</div>
+							<div class="splide__slide">
+								<img src="./aaset/I6.jpg" alt="" />
+							</div>
+							<div class="splide__slide">
+								<img src="./aaset/I7.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="Brains">
+				<h2>Food For Hungry Brains</h2>
+				<div
+					class="splide"
+					id="sec2"
+					role="group"
+					aria-label="Splide Basic HTML Example"
+				>
+					<div class="splide__track">
+						<div class="splide__list">
+							<div class="splide__slide">
+								<img src="./aaset/A1.jpg" alt="" />
+							</div>
+							<div class="splide__slide">
+								<img src="./aaset/A2.jpg" alt="" />
+							</div>
+							<div class="splide__slide">
+								<img src="./aaset/A3.jpg" alt="" />
+							</div>
+							<div class="splide__slide">
+								<img src="./aaset/A4.jpg" alt="" />
+							</div>
+							<div class="splide__slide">
+								<img src="./aaset/A5.jpg" alt="" />
+							</div>
+							<div class="splide__slide">
+								<img src="./aaset/A6.jpg" alt="" />
+							</div>
+							<div class="splide__slide">
+								<img src="./aaset/A7.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="watchlist">
+			<h2>Continue Watching</h2>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+		<script>
+			var splide = new Splide("#sec1", {
+				type: "loop",
+				perPage: 3,
+				//   perMove: 1,
+			});
+			splide.mount();
+
+			var splide2 = new Splide("#sec2", {
+				type: "loop",
+				perPage: 3,
+				//   perMove: 1,
+			});
+			splide2.mount();
+		</script>
+	</body>
+</html>

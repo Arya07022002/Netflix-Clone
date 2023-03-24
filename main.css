@@ -1,0 +1,126 @@
+body {
+	font: 62.5%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	color: #fff;
+	font-family: "Roboto", sans-serif;
+}
+
+*,
+html {
+	-webkit-user-select: none;
+}
+
+.header {
+	height: 120vh;
+	width: 100%;
+	overflow: hidden;
+}
+.nav-bar {
+	background-color: black;
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	justify-content: space-between;
+}
+.logo-nav {
+	width: 5rem;
+}
+
+.part {
+	align-items: center;
+	display: flex;
+	gap: 1rem;
+}
+
+.part i {
+	cursor: pointer;
+	color: #fff;
+}
+
+.hero {
+	height: 100%;
+	background: url("./aaset/kantara.png") no-repeat;
+	background-size: cover;
+	display: flex;
+	gap: 1rem;
+	position: relative;
+}
+.hero1 {
+	transform: translateY(40%);
+	color: #fff;
+	margin-left: 5rem;
+	margin-right: 30rem;
+}
+.options1 {
+	flex-wrap: wrap;
+	display: flex;
+	gap: 2rem;
+}
+.options1 img {
+	width: 12rem;
+	height: 18rem;
+}
+
+.btn {
+	background-color: rgba(63, 63, 65, 0.4);
+	outline: none;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	backdrop-filter: blur(10px);
+	width: 6rem;
+	height: 2rem;
+}
+
+.btn i {
+	margin-right: 1rem;
+}
+.options1 {
+	flex-wrap: wrap;
+	display: flex;
+	gap: 1rem;
+}
+.options1 img {
+	width: 12rem;
+	height: 18rem;
+}
+.options2 {
+	flex-wrap: wrap;
+	display: flex;
+	gap: 1rem;
+}
+.options2 img {
+	width: 12rem;
+	height: 18rem;
+}
+
+.tag {
+	position: absolute;
+	right: 0;
+	bottom: 15rem;
+	padding: 0.5rem 2rem;
+	backdrop-filter: blur(10px);
+	border-left: 3px solid #fff;
+}
+
+.splide__slide {
+	height: 18rem !important;
+	width: 12rem !important;
+	margin: 0 0.5rem !important;
+}
+
+.splide__slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.Brains {
+	margin-bottom: 3rem;
+	/* padding: 0 2rem; */
+}
+.Varieties {
+	padding: 0 2rem;
+}
